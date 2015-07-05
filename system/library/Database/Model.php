@@ -6,8 +6,8 @@
  * Time: 2:42 PM
  */
 
-namespace system\library;
-require_once(DIR_LIB."/Database.php");
+namespace system\library\Database;
+
 class Model extends Database {
     protected static  $db_fields = array();
     protected static $table;
@@ -127,7 +127,7 @@ class Model extends Database {
         $sql .=")";
         try{
             $prep = $instance->prepare($sql);
-            var_dump($attributes);
+
             foreach($attributes as $key=>$value){
 
                 $prep->bindValue(':'.$key, $value);
@@ -168,7 +168,6 @@ class Model extends Database {
         $sql .= join(", ", $attribute_pairs);
         $sql .= " WHERE id=:id";
 
-        var_dump($sql);
         try{
             $prep = $instance->prepare($sql);
             foreach($attributes as $key=>$value){

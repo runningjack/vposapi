@@ -1,23 +1,32 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: Ahmed
- * Date: 6/4/15
- * Time: 11:09 AM
+ * User: Amedora
+ * Date: 7/5/15
+ * Time: 4:14 AM
  */
-namespace system\library;
-//use system\library\Model;
-require_once("system/library/model.php");
-class Employee extends Model {
-    protected  static $db_fields=array('id','name','phone','email','username','password','created_at','updated_at');
-    protected static $table ="employee";
+
+namespace models;
+
+
+use system\library\Model;
+
+class Merchant extends Model {
+    protected  static $db_fields=array('id','firstname','lastname','phone','email','username','password','store','device_IMEI','address','city','state','created_at','updated_at');
+    protected static $table ="merchants";
 
     public  $id;
-    public  $name;
+    public  $firstname;
+    public  $lastname;
     public  $phone;
     public  $email;
     public  $username;
     public  $password;
+    public  $store;
+    public  $device_IMEI;
+    public  $address;
+    public  $city;
+    public  $state;
     public  $created_at;
     public  $updated_at;
 
@@ -33,5 +42,4 @@ class Employee extends Model {
 
         return $attributes;
     }
-
 } 

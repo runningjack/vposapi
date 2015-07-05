@@ -7,11 +7,9 @@
  */
 
 namespace models;
-use system\library\Model;
-
-require_once("./system/library/Model.php");
+use system\library\Database\Model;
 class Customer extends  Model{
-    protected  static $db_fields=array('id','firstname','lastname','phone','email','username','password','address','city','state','created_at','updated_at');
+    protected  static $db_fields=array('id','firstname','lastname','phone','email','username','password','verified','disabled','device_IMEI','address','city','state','created_at','updated_at');
     protected static $table ="customers";
 
     public  $id;
@@ -21,6 +19,9 @@ class Customer extends  Model{
     public  $email;
     public  $username;
     public  $password;
+    public  $verified;
+    public  $disabled;
+   // public  $device_IMEI;
     public  $address;
     public  $city;
     public  $state;

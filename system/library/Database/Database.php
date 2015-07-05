@@ -5,7 +5,7 @@
  * Date: 6/5/15
  * Time: 12:51 PM
  */
-namespace system\library;
+namespace system\library\Database;
 class Database extends \PDO {
 
 

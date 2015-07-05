@@ -6,21 +6,23 @@
  * Time: 7:46 AM
  */
 
-/*function __autoload($classname) {
+function controller__autoload($classname) {
     $classname = ltrim($classname, '\\');
     $filename  = '';
     $namespace = '';
     if ($lastnspos = strripos($classname, '\\')) {
         $namespace = substr($classname, 0, $lastnspos);
         $classname = substr($classname, $lastnspos + 1);
-        $filename  = str_replace('\\', '/', $namespace) . '/';
+        $filename  = preg_replace('#\/\/#', '/', $namespace) . '/';
     }
-    $filename .= str_replace('_', '/', $classname) . '.php';
+    $filename .= preg_replace('/_/', '/', $classname) . '.php';
     require $filename;
-}*/
+    //echo "use ".$namespace;
+}
 
+spl_autoload_register("controller__autoload");
 //namespace controllers;
-require_once("./models/Customer.php");
+
 class CustomerController {
     private $_params;
 
@@ -34,14 +36,14 @@ class CustomerController {
         unset($input['controller']);
         unset($input['action']);
 
-
         $customer = new models\Customer();
         foreach($input as $key=>$value){
             $customer->$key = $value;
         }
+        $customer->verified = 0;
 
         if($customer->create()){
-            return $customer; //success
+            //return $customer; //success
         }else{
             throw new \Exception("Customer could not be created"); //return "error"; //unsuccessful
         }
@@ -53,21 +55,43 @@ class CustomerController {
         unset($input['controller']);
         unset($input['action']);
 
-        var_dump($input);
         $customer = models\Customer::find($input['id']);
         foreach($input as $key=>$value){
             $customer->$key = $value;
         }
+        $customer->updated_at   =   date("Y-m-d H:i:s");
+
+
 
         if($customer->update()){
-            return $customer; //success
+            $verify = new system\library\Verify("","","",$input);
+
+            return $verify->post(array("number"=>$input['number']));
+            //return $customer; //success
         }else{
             throw new \Exception("Customer record could not be updated"); //return "error"; //unsuccessful
         }
     }
 
-    public function phonevalidateAction(){
-        // generate "random" 6-digit verification code
-        $code = rand(100000, 999999);
+    public function pinAction(){
+        $input = $this->_params;
+        $verify = new system\library\Verify("","","",$input);
+        return $verify->post(array("number"=>$input['number']));
+    }
+
+    public function verifyAction(){
+        $input = $this->_params;
+        $verify = new system\library\Verify("","","",$input);
+        $myobj = (\system\library\Database\DB::find_by_sql("SELECT * FROM hashes WHERE number=".$input['number']));
+
+        if($myobj){
+            $myobj = new \ArrayObject(array_shift($myobj));
+            if($verify->get($myobj->offsetGet("hashed"),$input)){
+                return "valid";
+            }else{
+                return "invalid";
+            }
+        }
+
     }
 } 
