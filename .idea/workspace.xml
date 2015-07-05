@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f942386d-696f-41f9-b0b4-2471a311700f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/Hashing/Bycrypt.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/Database/DB.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/Hashing/Hashinginterface.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Merchant.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/Hashing/Shahash.php" />
-      <change type="DELETED" beforePath="C:\wamp\www\VirtualPOS\vposapi\system\library\changelog.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\VirtualPOS\vposapi\system\library\controller.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\VirtualPOS\vposapi\system\library\employee.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\VirtualPOS\vposapi\system\library\logstatus.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\VirtualPOS\vposapi\system\library\module.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\VirtualPOS\vposapi\system\library\version.php" afterPath="" />
-      <change type="MOVED" beforePath="C:\wamp\www\VirtualPOS\vposapi\system\library\Database.php" afterPath="$PROJECT_DIR$/system/library/Database/Database.php" />
-      <change type="MOVED" beforePath="C:\wamp\www\VirtualPOS\vposapi\system\library\Model.php" afterPath="$PROJECT_DIR$/system/library/Database/Model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Customer.php" afterPath="$PROJECT_DIR$/models/Customer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/CustomerController.php" afterPath="$PROJECT_DIR$/controllers/CustomerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/library/Verify.php" afterPath="$PROJECT_DIR$/system/library/Verify.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/MerchantController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vposapi.iws" />
@@ -50,13 +35,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CustomerController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CustomerController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/CustomerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="2" selection-start="2706" selection-end="2706" vertical-scroll-proportion="3.1145039" vertical-offset="0" max-vertical-offset="1734">
+            <state line="36" column="32" selection-start="678" selection-end="1294" vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="1734">
               <folding>
                 <element signature="e#6#87#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MerchantController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/MerchantController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="619" selection-end="619" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="884">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hashinginterface.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/library/Hashing/Hashinginterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="2" selection-start="300" selection-end="300" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bycrypt.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/system/library/Hashing/Bycrypt.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="5" selection-start="761" selection-end="761" vertical-scroll-proportion="0.8110687" vertical-offset="0" max-vertical-offset="544">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/HomeController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="5" selection-start="1760" selection-end="1760" vertical-scroll-proportion="-10.461538" vertical-offset="51" max-vertical-offset="7514">
+              <folding>
+                <element signature="n#__construct#0;n#HomeController#0;n#!!top" expanded="false" />
+                <element signature="n#getIndex#0;n#HomeController#0;n#!!top" expanded="false" />
+                <element signature="n#getEmployeeIndex#0;n#HomeController#0;n#!!top" expanded="false" />
+                <element signature="n#getStatusList#0;n#HomeController#0;n#!!top" expanded="false" />
+                <element signature="n#getModuleList#0;n#HomeController#0;n#!!top" expanded="false" />
+                <element signature="n#getAddLog#0;n#HomeController#0;n#!!top" expanded="false" />
+                <element signature="n#getAddStatus#0;n#HomeController#0;n#!!top" expanded="false" />
+                <element signature="n#getAddModule#0;n#HomeController#0;n#!!top" expanded="false" />
+                <marker date="1435828850583" expanded="true" signature="1933:2005" placeholder="SELECT * FRO..changelog..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Merchant.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Merchant.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="13" selection-start="998" selection-end="998" vertical-scroll-proportion="-13.461538" vertical-offset="228" max-vertical-offset="765">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,61 +126,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Hashinginterface.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/library/Hashing/Hashinginterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="39" selection-start="261" selection-end="261" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Shahash.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/library/Hashing/Shahash.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="459">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bycrypt.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/library/Hashing/Bycrypt.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="33" selection-start="210" selection-end="210" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="544">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/library/Database/Model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="43" selection-start="157" selection-end="197" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="1598">
-              <folding>
-                <element signature="e#2314#2555#0" expanded="false" />
-                <element signature="e#2561#3394#0" expanded="false" />
-                <element signature="e#3400#4482#0" expanded="false" />
-                <element signature="e#4595#5461#0" expanded="false" />
-                <element signature="e#5467#5930#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Database.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/library/Database/Database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="5" selection-start="492" selection-end="492" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="357">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DB.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/library/Database/DB.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="98" column="0" selection-start="2683" selection-end="2683" vertical-scroll-proportion="-35.192307" vertical-offset="666" max-vertical-offset="2363">
               <folding />
             </state>
           </provider>
@@ -170,13 +159,14 @@
         <option value="$PROJECT_DIR$/models/Customer.php" />
         <option value="$PROJECT_DIR$/system/library/Hashing/Sha1.php" />
         <option value="$PROJECT_DIR$/system/library/Hashing/Hashinginterface.php" />
-        <option value="$PROJECT_DIR$/system/library/Hashing/Bycrypt.php" />
         <option value="$PROJECT_DIR$/models/Merchant.php" />
         <option value="$PROJECT_DIR$/system/library/Database/Brilliant.php" />
         <option value="$PROJECT_DIR$/system/library/Database/DB.php" />
         <option value="$PROJECT_DIR$/system/library/Verify.php" />
         <option value="$PROJECT_DIR$/system/library/Hashing/Shahash.php" />
         <option value="$PROJECT_DIR$/controllers/CustomerController.php" />
+        <option value="$PROJECT_DIR$/controllers/MerchantController.php" />
+        <option value="$PROJECT_DIR$/system/library/Hashing/Bycrypt.php" />
       </list>
     </option>
   </component>
@@ -294,15 +284,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Database" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -316,7 +298,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -366,7 +348,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -427,23 +409,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="5" selection-start="1760" selection-end="1760" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="7514">
-          <folding>
-            <element signature="n#__construct#0;n#HomeController#0;n#!!top" expanded="false" />
-            <element signature="n#getIndex#0;n#HomeController#0;n#!!top" expanded="false" />
-            <element signature="n#getEmployeeIndex#0;n#HomeController#0;n#!!top" expanded="false" />
-            <element signature="n#getStatusList#0;n#HomeController#0;n#!!top" expanded="false" />
-            <element signature="n#getModuleList#0;n#HomeController#0;n#!!top" expanded="false" />
-            <element signature="n#getAddLog#0;n#HomeController#0;n#!!top" expanded="false" />
-            <element signature="n#getAddStatus#0;n#HomeController#0;n#!!top" expanded="false" />
-            <element signature="n#getAddModule#0;n#HomeController#0;n#!!top" expanded="false" />
-            <marker date="1435828850583" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..changelog..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="8" selection-start="1274" selection-end="1274" vertical-scroll-proportion="-13.115385" vertical-offset="220" max-vertical-offset="816">
@@ -460,37 +425,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Merchant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="32" selection-start="918" selection-end="918" vertical-scroll-proportion="-20.923077" vertical-offset="0" max-vertical-offset="765">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/library/Hashing/Hashinginterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="39" selection-start="261" selection-end="261" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/library/Hashing/Bycrypt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="33" selection-start="210" selection-end="210" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/library/Database/Database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="5" selection-start="492" selection-end="492" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="357">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="61" selection-start="657" selection-end="657" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="833">
           <folding />
         </state>
       </provider>
@@ -515,13 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/Customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="5" selection-start="1091" selection-end="1091" vertical-scroll-proportion="-15.076923" vertical-offset="220" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/library/Verify.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="162" column="40" selection-start="4693" selection-end="4693" vertical-scroll-proportion="-19.653847" vertical-offset="866" max-vertical-offset="1632">
@@ -536,6 +466,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/models/Merchant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="13" selection-start="998" selection-end="998" vertical-scroll-proportion="-13.461538" vertical-offset="228" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="5" selection-start="1760" selection-end="1760" vertical-scroll-proportion="-10.461538" vertical-offset="51" max-vertical-offset="7514">
+          <folding>
+            <element signature="n#__construct#0;n#HomeController#0;n#!!top" expanded="false" />
+            <element signature="n#getIndex#0;n#HomeController#0;n#!!top" expanded="false" />
+            <element signature="n#getEmployeeIndex#0;n#HomeController#0;n#!!top" expanded="false" />
+            <element signature="n#getStatusList#0;n#HomeController#0;n#!!top" expanded="false" />
+            <element signature="n#getModuleList#0;n#HomeController#0;n#!!top" expanded="false" />
+            <element signature="n#getAddLog#0;n#HomeController#0;n#!!top" expanded="false" />
+            <element signature="n#getAddStatus#0;n#HomeController#0;n#!!top" expanded="false" />
+            <element signature="n#getAddModule#0;n#HomeController#0;n#!!top" expanded="false" />
+            <marker date="1435828850583" expanded="true" signature="1933:2005" placeholder="SELECT * FRO..changelog..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="61" selection-start="657" selection-end="657" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="5" selection-start="1091" selection-end="1091" vertical-scroll-proportion="-15.076923" vertical-offset="220" max-vertical-offset="731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/CustomerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="32" selection-start="678" selection-end="1294" vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="1734">
+          <folding>
+            <element signature="e#6#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/MerchantController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="619" selection-end="619" vertical-scroll-proportion="-12.423077" vertical-offset="0" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Hashing/Hashinginterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="2" selection-start="300" selection-end="300" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/system/library/Hashing/Shahash.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="459">
@@ -543,12 +534,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/CustomerController.php">
+    <entry file="file://$PROJECT_DIR$/system/library/Hashing/Bycrypt.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="2" selection-start="2706" selection-end="2706" vertical-scroll-proportion="3.1145039" vertical-offset="0" max-vertical-offset="1734">
-          <folding>
-            <element signature="e#6#87#0" expanded="true" />
-          </folding>
+        <state line="30" column="5" selection-start="761" selection-end="761" vertical-scroll-proportion="0.8110687" vertical-offset="0" max-vertical-offset="544">
+          <folding />
         </state>
       </provider>
     </entry>
