@@ -21,10 +21,11 @@ class Bycrypt implements Hashinginterface {
         $hash = password_hash($value, PASSWORD_BCRYPT, array('cost' => $cost));
         if ($hash === false)
         {
-            throw new \RuntimeException("Bcrypt hashing not supported.");
+            throw new \RuntimeException("Encrypt hashing not supported.");
         }
         return $hash;
     }
+
 
     public static function check($value,$hashed,array $option=array()){
         return password_verify($value,$hashed);
