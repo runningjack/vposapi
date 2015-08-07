@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f942386d-696f-41f9-b0b4-2471a311700f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/library/Hashing/Bycrypt.php" afterPath="$PROJECT_DIR$/system/library/Hashing/Bycrypt.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Account.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/Validator/Base.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/Validator/Validate/Required.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Transaction.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/controllers/TransactionController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/Translog.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/Validator/Validate/Unique.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/system/library/Validator/Validator.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Customer.php" afterPath="$PROJECT_DIR$/models/Customer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/CustomerController.php" afterPath="$PROJECT_DIR$/controllers/CustomerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/library/Database/DB.php" afterPath="$PROJECT_DIR$/system/library/Database/DB.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/Merchant.php" afterPath="$PROJECT_DIR$/models/Merchant.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/MerchantController.php" afterPath="$PROJECT_DIR$/controllers/MerchantController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/library/Database/Model.php" afterPath="$PROJECT_DIR$/system/library/Database/Model.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/system/library/Verify.php" afterPath="$PROJECT_DIR$/system/library/Verify.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.php" afterPath="$PROJECT_DIR$/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vposapi.iws" />
@@ -26,84 +42,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="Account.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Account.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="35" selection-start="764" selection-end="764" vertical-scroll-proportion="-0.0" vertical-offset="493" max-vertical-offset="697">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Customer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Customer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="5" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="816">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomerController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/CustomerController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="32" selection-start="678" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1734">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MerchantController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/MerchantController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="969">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Hashinginterface.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/library/Hashing/Hashinginterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="2" selection-start="300" selection-end="300" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bycrypt.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/system/library/Hashing/Bycrypt.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="32" selection-start="555" selection-end="555" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="561">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/HomeController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="5" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="8075">
-              <folding>
-                <marker date="1435828850583" expanded="true" signature="1933:2005" placeholder="SELECT * FRO..changelog..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Merchant.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Merchant.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="13" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="850">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Verify.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/system/library/Verify.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="164" column="31" selection-start="4787" selection-end="4787" vertical-scroll-proportion="0.56920075" vertical-offset="2394" max-vertical-offset="2907">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="61" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="833">
+            <state line="9" column="0" selection-start="107" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1207">
               <folding />
             </state>
           </provider>
@@ -112,7 +63,70 @@
       <file leaf-file-name="Shahash.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system/library/Hashing/Shahash.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="459">
+            <state line="14" column="41" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="544">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hashinginterface.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/library/Hashing/Hashinginterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="28" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="357">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Model.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/library/Database/Model.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="18" selection-start="2215" selection-end="2215" vertical-scroll-proportion="-0.0" vertical-offset="1207" max-vertical-offset="3638">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Verify.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/system/library/Verify.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="146" column="105" selection-start="4225" selection-end="4319" vertical-scroll-proportion="-3.1764705" vertical-offset="2218" max-vertical-offset="2788">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MerchantController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/MerchantController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1598">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/TransactionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="21" selection-start="527" selection-end="527" vertical-scroll-proportion="0.60956174" vertical-offset="0" max-vertical-offset="2023">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Translog.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Translog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="2" selection-start="481" selection-end="481" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transaction.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/Transaction.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -132,31 +146,43 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/models/Vposusers.php" />
-        <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/system/library/Database.php" />
         <option value="$PROJECT_DIR$/system/library/Model.php" />
         <option value="$PROJECT_DIR$/system/library/Database/Database.php" />
-        <option value="$PROJECT_DIR$/system/library/Database/Model.php" />
-        <option value="$PROJECT_DIR$/models/Customer.php" />
         <option value="$PROJECT_DIR$/system/library/Hashing/Sha1.php" />
         <option value="$PROJECT_DIR$/system/library/Hashing/Hashinginterface.php" />
-        <option value="$PROJECT_DIR$/models/Merchant.php" />
         <option value="$PROJECT_DIR$/system/library/Database/Brilliant.php" />
-        <option value="$PROJECT_DIR$/system/library/Database/DB.php" />
         <option value="$PROJECT_DIR$/system/library/Hashing/Shahash.php" />
-        <option value="$PROJECT_DIR$/controllers/CustomerController.php" />
-        <option value="$PROJECT_DIR$/controllers/MerchantController.php" />
         <option value="$PROJECT_DIR$/system/library/Hashing/Bycrypt.php" />
+        <option value="$PROJECT_DIR$/system/library/Validator/Validate.php" />
+        <option value="$PROJECT_DIR$/system/library/Validator/Unique.php" />
+        <option value="$PROJECT_DIR$/system/library/Validator/Base.php" />
+        <option value="$PROJECT_DIR$/system/library/Validator/Validate/Unique.php" />
+        <option value="$PROJECT_DIR$/system/library/Validator/Validator.php" />
+        <option value="$PROJECT_DIR$/system/library/Validator/Validate/Required.php" />
+        <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/system/library/Verify.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/models/Customer.php" />
+        <option value="$PROJECT_DIR$/models/Account.php" />
+        <option value="$PROJECT_DIR$/controllers/CustomerController.php" />
+        <option value="$PROJECT_DIR$/system/library/Database/DB.php" />
+        <option value="$PROJECT_DIR$/models/Merchant.php" />
+        <option value="$PROJECT_DIR$/system/library/Database/Model.php" />
+        <option value="$PROJECT_DIR$/controllers/MerchantController.php" />
+        <option value="$PROJECT_DIR$/controllers/TransactionController.php" />
+        <option value="$PROJECT_DIR$/models/Translog.php" />
+        <option value="$PROJECT_DIR$/models/Transaction.php" />
       </list>
     </option>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHPexec" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1366" />
-    <option name="height" value="728" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -202,6 +228,136 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Validator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Validator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Validate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Database" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vposapi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -209,20 +365,49 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../troublefree/changelog" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sisl" />
     <property name="SearchEverywhereHistory" value="4" />
+    <property name="recentsLimit" value="5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\VirtualPOS\vposapi\system\library\Validator" />
       <recent name="C:\wamp\www\VirtualPOS\vposapi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\VirtualPOS\vposapi\system\library\Validator" />
+      <recent name="C:\wamp\www\VirtualPOS\vposapi\system\library\Validator\Validate" />
       <recent name="C:\wamp\www\VirtualPOS\vposapi\system\library\Hashing" />
       <recent name="C:\wamp\www\VirtualPOS\vposapi\system\library\Database" />
       <recent name="C:\wamp\www\VirtualPOS\vposapi\models" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Script.Unique.php">
+    <configuration default="false" name="Unique.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/system/library/Validator/Validate/Unique.php" scriptParameters="&quot;email&quot;,&quot;This is a unique field&quot;,&quot;customers&quot;">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Verify.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/system/library/Verify.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Base.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/system/library/Validator/Base.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unique.php (1)" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/system/library/Validator/Unique.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Shahash.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/system/library/Hashing/Shahash.php">
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -236,7 +421,22 @@
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
-    <list size="0" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="PHP Script.Unique.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.Verify.php" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.Base.php" />
+      <item index="3" class="java.lang.String" itemvalue="PHP Script.Unique.php (1)" />
+      <item index="4" class="java.lang.String" itemvalue="PHP Script.Shahash.php" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.Unique.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHP Script.Shahash.php" />
+        <item index="2" class="java.lang.String" itemvalue="PHP Script.Unique.php (1)" />
+        <item index="3" class="java.lang.String" itemvalue="PHP Script.Base.php" />
+        <item index="4" class="java.lang.String" itemvalue="PHP Script.Verify.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
@@ -248,7 +448,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="728" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -256,19 +456,19 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13990825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15861027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32741934" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -286,9 +486,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -306,10 +506,101 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/system/library/Validator/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="26" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Validator/Validator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="32" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Validator/Validate/Required.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="476" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Database/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="14" selection-start="128" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="442" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1420" selection-end="1420" vertical-scroll-proportion="0.0" vertical-offset="392" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1088" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Database/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="98" column="0" selection-start="2683" selection-end="2683" vertical-scroll-proportion="0.0" vertical-offset="1666" max-vertical-offset="2448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/CustomerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="28" selection-start="1797" selection-end="1797" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="2091" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Validator/Validate/Unique.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="884">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Database/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="3638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Validator/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="26" selection-start="494" selection-end="494" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Validator/Validator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="32" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="952" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Validator/Validate/Required.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="476" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Database/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="14" selection-start="128" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="442" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="47" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="918" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/models/Customer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="5" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="816">
@@ -319,16 +610,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/CustomerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="32" selection-start="678" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1734">
-          <folding />
-        </state>
+        <state line="36" column="32" selection-start="678" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1734" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/MerchantController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="969">
-          <folding />
-        </state>
+        <state line="24" column="0" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="969" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/Hashing/Hashinginterface.php">
@@ -340,25 +627,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/Hashing/Bycrypt.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="17" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="5" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="8075">
-          <folding>
-            <marker date="1435828850583" expanded="true" signature="1933:2005" placeholder="SELECT * FRO..changelog..." />
-          </folding>
-        </state>
+        <state line="52" column="5" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="8075" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/models/Merchant.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="13" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="850">
-          <folding />
-        </state>
+        <state line="39" column="13" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="850" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/Verify.php">
@@ -370,9 +649,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="61" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="833">
-          <folding />
-        </state>
+        <state line="17" column="61" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="833" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/Hashing/Shahash.php">
@@ -382,101 +659,148 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="8" selection-start="1274" selection-end="1274" vertical-scroll-proportion="-13.115385" vertical-offset="220" max-vertical-offset="816" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/system/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="230" column="27" selection-start="4739" selection-end="4746" vertical-scroll-proportion="0.3326923" vertical-offset="3737" max-vertical-offset="17595" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system/library/Database/Database.php">
+    <entry file="file://$PROJECT_DIR$/controllers/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="5" selection-start="492" selection-end="492" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/library/Database/Model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="157" selection-end="197" vertical-scroll-proportion="-2.0" vertical-offset="0" max-vertical-offset="1598" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/library/Database/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="98" column="0" selection-start="2683" selection-end="2683" vertical-scroll-proportion="-35.192307" vertical-offset="666" max-vertical-offset="2363">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Merchant.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="13" selection-start="998" selection-end="998" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="850">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controllers/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="5" selection-start="1760" selection-end="1760" vertical-scroll-proportion="0.0" vertical-offset="884" max-vertical-offset="8075">
-          <folding>
-            <marker date="1435828850583" expanded="true" signature="1933:2005" placeholder="SELECT * FRO..changelog..." />
-          </folding>
-        </state>
+        <state line="52" column="5" selection-start="1760" selection-end="1760" vertical-scroll-proportion="-30.73077" vertical-offset="0" max-vertical-offset="7990" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/system/library/Hashing/Hashinginterface.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="61" selection-start="657" selection-end="657" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Customer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="5" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="816">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/CustomerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="32" selection-start="678" selection-end="1294" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1734">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/MerchantController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="619" selection-end="619" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="969">
+        <state line="12" column="28" selection-start="182" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="357">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/Hashing/Bycrypt.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="32" selection-start="555" selection-end="555" vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/system/library/Hashing/Hashinginterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="2" selection-start="300" selection-end="300" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
+        <state line="30" column="30" selection-start="740" selection-end="740" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="561" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/Hashing/Shahash.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="392" selection-end="392" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="459">
+        <state line="14" column="41" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Validator/Validator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="32" selection-start="634" selection-end="634" vertical-scroll-proportion="0.20071048" vertical-offset="278" max-vertical-offset="867" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Validator/Base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="26" selection-start="494" selection-end="494" vertical-scroll-proportion="0.5737122" vertical-offset="0" max-vertical-offset="578" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Validator/Validate/Required.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.3321492" vertical-offset="0" max-vertical-offset="563" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="14" selection-start="838" selection-end="838" vertical-scroll-proportion="0.7527675" vertical-offset="0" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="107" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1207">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="79" selection-start="1991" selection-end="1991" vertical-scroll-proportion="0.73431736" vertical-offset="469" max-vertical-offset="1088" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Database/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="18" selection-start="2215" selection-end="2215" vertical-scroll-proportion="0.0" vertical-offset="1207" max-vertical-offset="3638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="35" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="697">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Merchant.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="5" selection-start="1027" selection-end="1367" vertical-scroll-proportion="0.7680312" vertical-offset="405" max-vertical-offset="918" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/CustomerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="9" selection-start="2687" selection-end="3327" vertical-scroll-proportion="-17.615385" vertical-offset="69" max-vertical-offset="731" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/MerchantController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1309">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Database/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="1" selection-start="497" selection-end="497" vertical-scroll-proportion="0.48479086" vertical-offset="0" max-vertical-offset="526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Validator/Validate/Unique.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="36" selection-start="621" selection-end="622" vertical-scroll-proportion="-3.254902" vertical-offset="157" max-vertical-offset="782">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/system/library/Verify.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="31" selection-start="4787" selection-end="4787" vertical-scroll-proportion="0.56920075" vertical-offset="2394" max-vertical-offset="2907">
+        <state line="146" column="105" selection-start="4225" selection-end="4319" vertical-scroll-proportion="-3.1764705" vertical-offset="2218" max-vertical-offset="2788">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/system/library/Database/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="33" selection-start="1202" selection-end="1208" vertical-scroll-proportion="-11.307693" vertical-offset="369" max-vertical-offset="2363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Translog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="2" selection-start="481" selection-end="481" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Transaction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="483" selection-end="483" vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/TransactionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="21" selection-start="527" selection-end="527" vertical-scroll-proportion="0.60956174" vertical-offset="0" max-vertical-offset="2023">
           <folding />
         </state>
       </provider>

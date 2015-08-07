@@ -71,7 +71,7 @@ class Verify {
 
     }
 
-    public function post($params)
+    public function post($params,$table="",$pk="")
     {
         //check for valid request
         if(!isset($params['number'])){
@@ -90,7 +90,7 @@ class Verify {
         $this->sendSms($number, $text);
 
         //get hash
-        $hash = $this->getHash($pin, $number);
+        $hash = $this->getHash($pin, $number,$table,$pk);
 
         //return hash
         return array('hash' => $hash);
@@ -116,7 +116,7 @@ class Verify {
         $sendto = "0".preg_replace($pattern,"",$to);
 
         $uri = sprintf(self::API_URI, $this->owner, $this->subacct, $this->subacctPwd, $text, $this->sender,$sendto);
-        print_r($uri);
+        //print_r($uri);
         $ch = curl_init($uri);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         $result = curl_exec($ch);
@@ -125,7 +125,6 @@ class Verify {
         if($result){
             $ret = trim($result);
             $send = explode(":",$ret);
-
             if ($send[0] == "OK"){
                 return true;
             }else{
@@ -142,20 +141,14 @@ class Verify {
         }*/
     }
 
-    protected function getHash($pin, $number){
-        error_log('hashing: ' . implode(' : ', array($pin, $number, $this->salt)));
-        error_log( Shahash::make($pin,$options = array("number"=>$number,"key_salt"=>$this->salt)));
+    protected function getHash($pin, $number,$table="customers",$pk){
 
         $hashed = Shahash::make($pin,$options = array("number"=>$number,"key_salt"=>$this->salt));
-        if(DB::insert("hashes",array("hashed"=>$hashed,"number"=>$number,"key_salt"=>$this->salt))){
-
+        if(DB::update($table,array("hashed"=>$hashed,"phone"=>$number,"key_salt"=>$this->salt,"id"=>$pk))){
             return true;
         }else{
             throw new \RuntimeException("Pin generation process error");
         }
-
-
-
         //echo  $myobj->offsetGet("hashed");
         //return $hashed;
     }

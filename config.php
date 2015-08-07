@@ -38,6 +38,22 @@ define('DB_PASS','');
     }
 //@$session = new Session();
 
+function controller__autoload($classname) {
+    $classname = ltrim($classname, '\\');
+    $filename  = '';
+    $file ="";
+    $namespace = '';
+    if ($lastnspos = strripos($classname, '\\')) {
+        $namespace = substr($classname, 0, $lastnspos);
+        $classname = substr($classname, $lastnspos + 1);
+        $filename  = preg_replace('#\/\/#', DIRECTORY_SEPARATOR, $namespace) . '\\';
+    }
 
+    $filename .= preg_replace('/_/', DIRECTORY_SEPARATOR, $classname) . '.php';
+    $file = preg_replace("/\\\\/",DIRECTORY_SEPARATOR,$filename );
+    require BASE_DIR.DIRECTORY_SEPARATOR. $file;
+}
+
+spl_autoload_register("controller__autoload");
 
 ?>

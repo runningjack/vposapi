@@ -62,7 +62,7 @@ class Model extends Database {
 
     public static function find_by_sql($sql="") {
         $instance = new static;
-        $object_array =[];
+        $object_array =array();
         $sql =  $instance->query($sql);
         if($sql->execute()){
             while ($row = $sql->fetch(\PDO::FETCH_ASSOC)) {
